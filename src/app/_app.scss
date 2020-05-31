@@ -1,0 +1,49 @@
+.app {
+    .menu {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        box-sizing: border-box;
+        padding: 0.5em;
+        text-align: center;
+        &:after {
+            position: absolute;
+            content: '';
+            width: 90%;
+            bottom: 0;
+            height: 1px;
+            left: 5%;
+            background: lightgrey;
+        }
+        button {
+            padding: 0;
+            text-transform: none;
+            letter-spacing: unset;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
+            font-size: 0.8em;
+            min-width: 0;
+            margin: 0 1em;
+            &:hover {
+                background: inherit;
+            }
+            a {
+                display: inline-block;
+                box-sizing: border-box;
+                padding: 0.25em 0.5em;
+                color: #424242;
+                vertical-align: middle;
+                span {
+                    vertical-align: middle;
+                }
+                svg {
+                    height: 1.2em;
+                    width: 1.2em;
+                    vertical-align: middle;
+                    margin-right: 0.5em;
+                }
+            }
+        }
+    }
+}
